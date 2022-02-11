@@ -84,16 +84,15 @@ En el repositorio, se encuentran el `script` y la extracción de los datos en `j
 ## Analisis de negocio
 
 STARZ es un servicio de streaming para ver series, películas y más. Donde puede ver las temporadas actuales y pasadas de series originales de STARZ, donde, cuando y como quiera. 
-Puede verlo desde una computadora o descargarlo en un smartphone o tablet.
+Se puede ver desde una computadora o descargar la aplicación en un smartphone o tablet.
 
 Como STARZ, hay otros servicios de streaming que permite acceder a contenidos de audio, video o ambos a través de internet, de manera ubicua y on-demand, 
 sin la necesidad de descargarlos en el dispositivo. 
-Han surgido diferentes modelos de negocio que buscan monetizar esa provisión audiovisual directa al consumidor.
+Utilmamente, ha surgido diferentes modelos de negocio que buscan monetizar esa provisión audiovisual directa al consumidor por medio de anuncios publicitarios.
 
 El usuario obtiene de manera “gratuita” el acceso a los contenidos, pero estos contienen inserciones de publicidad en las que el proveedor obtiene ingresos a partir de colocar anuncios de publicitarios que deseen dar a conocer sus productos a las audiencias.
 
-Otra forma de generar ingreso es el modelo de suscripción,
-que están disponible para comprarse por un plan de membresía. 
-Y el plan de membresía puede tener diferentes modalidades. Esto hace que los clientes tengan la sensación de experimentación con un modelo de suscripción. 
+Otra forma de generar ingreso es el modelo de suscripción, que están disponible para comprarse por un plan de membresía. 
+El plan de membresía puede tener diferentes modalidades. Esto hace que los clientes tengan la sensación de experimentación con un modelo de suscripción. 
 
 Hoy las audiencias cuentan con una oferta abundante de plataformas de streaming y una competencia férrea por mantenerse entre sus preferencias.
