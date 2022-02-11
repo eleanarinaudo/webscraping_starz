@@ -44,13 +44,13 @@ def serieList():
     listS = soup.find("p").text
     series = eval(listS)
 
-    serie_link = list()
+    serie_list = list()
 
     for i in series["playContentArray"]["playContents"]:
         serie = {
             "Título": i["title"],
-            "Tipo": i["contentId"],
-            "ID_Serie": i["contentType"],
+            "ID_Serie": i["contentId"],
+            "Tipo": i["contentType"],
             "Link": BASE_URL
             + "series/"
             + i["title"].replace(" ", "-")
@@ -58,13 +58,13 @@ def serieList():
             + str(i["contentId"]),
             "Sinopsis": i["logLine"],
             "CantidadEpisodios": i["episodeCount"],
-            "Genero": i["genres"],
             "Año Lanzamiento": i["minReleaseYear"],
             "Actual o Finalizado": i["maxReleaseYear"],
-            "Calificación": i["ratingCode"],
-        }
-        serie_link.append(serie)
-        series_list_df = pd.DataFrame(serie_link)
+            "Calificación": i["ratingCode"]
+ }
+        
+        serie_list.append(serie)
+        series_list_df = pd.DataFrame(serie_list)
 
     print(series_list_df)
     series_list_df.to_csv(serie_csv, encoding="utf-8")
@@ -80,12 +80,14 @@ if __name__ == "__main__":
     )
 
     movie_path = "includes=contentId,contentType,title,logLine,ratingName,releaseYear,runtime&contentType=Movie"
-    serie_path = "includes=contentId, contentType,title, logLine, episodeCount,genres,minReleaseYear,maxReleaseYear,ratingCode&contentType=Series"
+    serie_path = "includes=contentId, contentType,title, logLine, episodeCount,minReleaseYear,maxReleaseYear,ratingCode,childContent&contentType=Series"
 
     movie_csv = "csv/Movie.csv"
     movie_json = "json/Movie.json"
     movieList()
+    
     serie_csv = "csv/Serie.csv"
     serie_json = "json/Serie.json"
     serieList()
-    
+
+
