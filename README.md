@@ -1,8 +1,10 @@
 # Web Scraping en Starz con Python
 
-El proyecto realizado demuestra cómo realizar Web Scraping de la página [Starz](https://www.starz.com/ar/es/) utilizando Python extrayendo y guardando la metadata de cada contenido de todas las películas y series los datos en un archivo `json` o `csv` . 
 
-Para Webscraping utilizamos la librería `BeatifulSoup`
+El proyecto realizado demuestra cómo realizar Web Scraping de la página [Starz](https://www.starz.com/ar/es/) utilizando Python. Extrayendo y guardando la metadata de todas las películas y series en un archivo `json` o `csv` . 
+
+Para Web scraping utilizamos la librería `BeatifulSoup`
+
 
 ## Objetivo
 Los objetivos a realizar son los siguientes: 
@@ -60,25 +62,8 @@ pip install -r requirements.txt
 
 # Proyecto
 
-En el repositorio, se encuentran los `módulos`, `scripts` y la extracción de los datos en `json` y `csv`.
+En el repositorio, se encuentran el `script` y la extracción de los datos en `json` y `csv`.
 
->Los módulos son:
->```python
->movie.py
->```
->
->```python
->serie.py
->```
->En estos módulos, se encuentran las clases con >su correspondiente documentación: 
->
->```python
->class Movie
->```
->
->```python
->class Serie
->```
 
 >El `Script` ha ejecutar en la terminal es:
 >```bash
@@ -98,9 +83,20 @@ En el repositorio, se encuentran los `módulos`, `scripts` y la extracción de l
 
 ## Analisis de negocio
 
-STARZPLAY es un servicio de streaming para ver TV, películas y más. Vea las temporadas actuales y pasadas de series originales de STARZ, las mejores películas de hoy y otros de sus contenidos favoritos donde, cuando y como quiera. Todo está aquí y es todo suyo. Puede verlo en una computadora o descargarlo a un teléfono inteligente o tableta y comenzar a obsesionarse.
+STARZ es un servicio de streaming para ver series, películas y más. Donde puede ver las temporadas actuales y pasadas de series originales de STARZ, donde, cuando y como quiera. 
+Puede verlo desde una computadora o descargarlo en un smartphone o tablet.
 
-Como STARZ, hay otros servicios de streaming que están disponibles para comprarse cuando se requiera por un plan de membresía, en lugar de la manera antigua de uno en uno. El plan de membresía puede tener diferentes modalidades. Esto hace que los clientes tengan la sensación de experimentar con un modelo de suscripción.
+Como STARZ, hay otros servicios de streaming que permite acceder a contenidos de audio, video o ambos a través de internet, de manera ubicua y on-demand, 
+sin la necesidad de descargarlos en el dispositivo. 
+Han surgido diferentes modelos de negocio que buscan monetizar esa provisión audiovisual directa al consumidor.
+
+El usuario obtiene de manera “gratuita” el acceso a los contenidos, pero estos contienen inserciones de publicidad en las que el proveedor obtiene ingresos a partir de colocar anuncios de publicitarios que deseen dar a conocer sus productos a las audiencias.
+
+Otra forma de generar ingreso es el modelo de suscripción,
+que están disponible para comprarse por un plan de membresía. 
+Y el plan de membresía puede tener diferentes modalidades. Esto hace que los clientes tengan la sensación de experimentación con un modelo de suscripción. 
+
+Hoy las audiencias cuentan con una oferta abundante de plataformas de streaming y una competencia férrea por mantenerse entre sus preferencias.
 
 
 
