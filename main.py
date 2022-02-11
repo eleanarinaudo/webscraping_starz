@@ -3,9 +3,10 @@ import requests
 import pandas as pd
 import json
 
+
 def movieList():
     """
-    Extrae los datos de las Peliculas 
+    Extrae los datos de las Peliculas
     y los guarda en .csv y .json
     """
     res = requests.get(REQ_URL + MOVIE_PATH)
@@ -35,13 +36,14 @@ def movieList():
 
     print(movies_list_df)
     movies_list_df.to_csv(MOVIE_CSV, encoding="utf-8")
-    movies_list_df.to_json(MOVIE_JSON, orient = 'index')
+    movies_list_df.to_json(MOVIE_JSON, orient="index")
 
     return movies_list_df
 
+
 def serieList():
     """
-    Extrae los datos de las Series 
+    Extrae los datos de las Series
     y los guarda en .csv y .json
     """
     res = requests.get(REQ_URL + SERIE_PATH)
@@ -66,15 +68,28 @@ def serieList():
             "CantidadEpisodios": i["episodeCount"],
             "Año Lanzamiento": i["minReleaseYear"],
             "Actual o Finalizado": i["maxReleaseYear"],
-            "Calificación": i["ratingCode"]
- }
-        serie["Genero"] = ', '.join(serie["Genero"])
+            "Calificación": i["ratingCode"],
+        }
+        serie["Genero"] = ", ".join(serie["Genero"])
         serie_list.append(serie)
         series_list_df = pd.DataFrame(serie_list)
 
+        episodes = {}
+        for season in i["childContent"]:
+            for i, episode in enumerate(season["childContent"]):
+                episodes[season["title"]] = {
+                    "Título": episode["title"],
+                    "Número": i + 1,
+                    "Rating": episode["ratingCode"],
+                    "Sinopsis": episode["logLine"],
+                    "Género": [gen["description"] for gen in episode["genres"]],
+                }
+            with open("episodes.json", "w"):
+                w.write(json.dumps(episodes))
+
     print(series_list_df)
     series_list_df.to_csv(SERIE_CSV, encoding="utf-8")
-    series_list_df.to_json(SERIE_JSON, orient = 'index')
+    series_list_df.to_json(SERIE_JSON, orient="index")
 
     return series_list_df
 
@@ -91,9 +106,7 @@ if __name__ == "__main__":
     MOVIE_CSV = "csv/Movie.csv"
     MOVIE_JSON = "json/Movie.json"
     movieList()
-    
+
     SERIE_CSV = "csv/Serie.csv"
     SERIE_JSON = "json/Serie.json"
     serieList()
-
-
