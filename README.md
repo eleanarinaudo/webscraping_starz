@@ -97,15 +97,3 @@ que están disponible para comprarse por un plan de membresía.
 Y el plan de membresía puede tener diferentes modalidades. Esto hace que los clientes tengan la sensación de experimentación con un modelo de suscripción. 
 
 Hoy las audiencias cuentan con una oferta abundante de plataformas de streaming y una competencia férrea por mantenerse entre sus preferencias.
-
-
-
-
-
-
-
-
-
-
-
-
