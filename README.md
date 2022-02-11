@@ -1,8 +1,8 @@
 # Web Scraping en Starz con Python
 
-El proyecto realizado demuestra cómo realizar Web Scraping de la página [Starz](https://www.starz.com/ar/es/) utilizando Python extrayendo y guardando la metadata de cada contenido de todas las películas y series los datos en un archivo `json` o `csv` . 
+El proyecto realizado demuestra cómo realizar Web Scraping de la página [Starz](https://www.starz.com/ar/es/) utilizando Python, extrayendo y guardando la metadata de cada contenido de todas las películas y series en un archivo `json` o `csv` . 
 
-Para Webscraping utilizamos la librería `BeatifulSoup`
+Para Web scraping utilizamos la librería `BeatifulSoup`
 
 ## Objetivo
 Los objetivos a realizar son los siguientes: 
@@ -98,9 +98,13 @@ En el repositorio, se encuentran los `módulos`, `scripts` y la extracción de l
 
 ## Analisis de negocio
 
-STARZPLAY es un servicio de streaming para ver TV, películas y más. Vea las temporadas actuales y pasadas de series originales de STARZ, las mejores películas de hoy y otros de sus contenidos favoritos donde, cuando y como quiera. Todo está aquí y es todo suyo. Puede verlo en una computadora o descargarlo a un teléfono inteligente o tableta y comenzar a obsesionarse.
+STARZ es un servicio de streaming para ver series, películas y más. 
+Donde puede ver las temporadas actuales y pasadas de series originales de STARZ, las mejores películas de hoy y otros de sus contenidos favoritos donde, cuando y como quiera.
+Puede verlo en una computadora o descargarlo a un teléfono inteligente o tableta y comenzar a obsesionarse.
 
-Como STARZ, hay otros servicios de streaming que están disponibles para comprarse cuando se requiera por un plan de membresía, en lugar de la manera antigua de uno en uno. El plan de membresía puede tener diferentes modalidades. Esto hace que los clientes tengan la sensación de experimentar con un modelo de suscripción.
+Como STARZ, hay otros servicios de streaming que están disponibles para comprarse por un plan de membresía, en lugar de la manera antigua de uno en uno. 
+El plan de membresía puede tener diferentes modalidades. 
+Esto hace que los clientes tengan la sensación de experimentar con un modelo de suscripción.
 
 
 
